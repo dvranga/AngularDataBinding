@@ -8,9 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HelloWorld';
   imgUrl;
+  url;
 
   ngOnInit():void{
     this.title="Hello from Ranganath Vatti. ";
     this.imgUrl="../assets/BridgeLabzlogo.jpg";
+    this.url="https://www.bridgelabz.com/";
+  }
+
+  onClick($event){
+    console.log(" logo is clincked ",$event);
+    window.open(this.url, "_blank")
   }
 }
